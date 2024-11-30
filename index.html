@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <title>BOGO UI</title>
+  </head>
+
+  <body>
+    <div class="bogo-container">
+      <h2><span></span>YAY! It's BOGO <span></span></h2>
+      <form>
+        <div class="option active">
+          <div class="option_Head">
+            <div>
+              <div class="details">
+                <input type="radio" id="unit1" name="units" value="1" />
+                <label for="">1 Unit</label>
+                <span class="discount">10% Off</span>
+              </div>
+              <p class="UnitName">Standare price</p>
+            </div>
+            <div class="price">
+              <p>$10.00 USD</p>
+              <p class="original-price">$24.00 USD</p>
+            </div>
+          </div>
+          <div id="details_Unit">
+            <div class="selections">
+              <div>
+                <p>Size</p>
+                <span>#1</span>
+                <select id="size1">
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                </select>
+              </div>
+              <div>
+                <p>Colour</p>
+                <select id="color1">
+                  <option>Black</option>
+                  <option>White</option>
+                  <option>Blue</option>
+                </select>
+              </div>
+            </div>
+            <div class="selections">
+              <div>
+                <span>#2</span>
+                <select id="size2">
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                </select>
+              </div>
+              <div>
+                <select id="color2">
+                  <option>Black</option>
+                  <option>White</option>
+                  <option>Blue</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="option_Head">
+            <div>
+              <div class="details">
+                <input type="radio" id="unit2" name="units" value="2" />
+                <p>2 Unit</p>
+                <span class="discount">20% Off</span>
+                <span class="most-popular">most popular</span>
+              </div>
+              <!-- <p class="UnitName">Standare price</p> -->
+            </div>
+            <div class="price">
+              <p>$18.00 USD</p>
+              <p class="original-price">$24.00 USD</p>
+            </div>
+          </div>
+          <div id="details_Unit">
+            <div class="selections">
+              <div>
+                <p>Size</p>
+                <span>#1</span>
+                <select id="size1">
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                </select>
+              </div>
+              <div>
+                <p>Colour</p>
+                <select id="color1">
+                  <option>Black</option>
+                  <option>White</option>
+                  <option>Blue</option>
+                </select>
+              </div>
+            </div>
+            <div class="selections">
+              <div>
+                <span>#2</span>
+                <select id="size2">
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                </select>
+              </div>
+              <div>
+                <select id="color2">
+                  <option>Black</option>
+                  <option>White</option>
+                  <option>Blue</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="option_Head">
+            <div>
+              <div class="details">
+                <input type="radio" id="unit3" name="units" value="3" />
+                <p>3 Unit</p>
+                <span class="discount">30% Off</span>
+              </div>
+              <!-- <p class="UnitName">Standare price</p> -->
+            </div>
+            <div class="price">
+              <p>$24.00 USD</p>
+              <p class="original-price">$24.00 USD</p>
+            </div>
+          </div>
+          <div id="details_Unit">
+            <div class="selections">
+              <div>
+                <p>Size</p>
+                <span>#1</span>
+                <select id="size1">
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                </select>
+              </div>
+              <div>
+                <p>Colour</p>
+                <select id="color1">
+                  <option>Black</option>
+                  <option>White</option>
+                  <option>Blue</option>
+                </select>
+              </div>
+            </div>
+            <div class="selections">
+              <div>
+                <span>#2</span>
+                <select id="size2">
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                </select>
+              </div>
+              <div>
+                <select id="color2">
+                  <option>Black</option>
+                  <option>White</option>
+                  <option>Blue</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="footer_Detail">
+            <p>Free Delivery</p>
+            <p>Total: <span id="total">$18.00 USD</span></p>
+          </div>
+          <button type="button" id="getValuesBtn">+ Add to Cart</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="bogo-container" id="cart_Details" style="display: none;">
+      <h2><span></span>Cart Details<span></span></h2>
+      <div class="card">
+        <h4>Unit - <span id="unitVal"></span></h4>
+        <div>
+          <p>Size #1: <span id="Size1"></span></p>
+          <p>Size #2: <span id="Color1"></span></p>
+        </div>
+        <div>
+          <p>Color #1: <span id="Size2"></span></p>
+          <p>Color #2: <span id="Color2"></span></p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
